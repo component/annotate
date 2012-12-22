@@ -1,0 +1,20 @@
+
+.annotation-selection {
+  position: absolute;
+  border: 1px solid rgba(0,0,0,.75);
+  width: 0;
+  height: 0;
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  pointer-events: none;
+}
+
+.annotation {
+  border: 1px solid rgba(0,0,0,0.5);
+  cursor: move;
+}
+
+.annotation:hover {
+  background: rgba(0,0,0,.1);
+  cursor: move;
+}

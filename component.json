@@ -1,0 +1,33 @@
+{
+  "name": "annotate",
+  "repo": "component/annotate",
+  "description": "Document annotation ui component",
+  "version": "0.0.1",
+  "keywords": [
+    "annotate",
+    "comment",
+    "canvas",
+    "ui",
+    "draw"
+  ],
+  "dependencies": {
+    "component/emitter": "*",
+    "component/popover": "*",
+    "component/events": "*",
+    "component/rect": "*",
+    "component/css": "*",
+    "tomerdmnt/offset": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "lib/index.js",
+    "lib/annotation.js"
+  ],
+  "styles": [
+    "annotate.css"
+  ],
+  "main": [
+    "lib/index.js"
+  ]
+}

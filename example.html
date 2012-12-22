@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Annotate</title>
+  <link rel="stylesheet" type="text/css" href="build/build.css">
+  <style>
+    body {
+      padding: 50px;
+      font: 12px "Helvetica Neue", Helvetica, Arial;
+    }
+
+    img {
+      border-radius: 2px;
+      border: 1px solid white;
+      box-shadow: 0 0 5px #888;
+      -webkit-user-select: none;
+    }
+
+    img:hover {
+      cursor: crosshair;
+    }
+  </style>
+</head>
+<body>
+  <h1>Annotate</h1>
+  <p>Draw a rectangle over a section of the document below to annotate, or <a href="#" onclick="save">save</a> the data.</p>
+
+  <div class="maru"><img src="http://www.power-animals.com/wp-content/uploads/maru.jpg"></div>
+
+  <script src="build/build.js"></script>
+  <script>
+    var Rect = require('component-rect');
+    var annotate = require('annotate');
+    var el = document.querySelector('.maru');
+    var doc = annotate(el);
+
+    // doc.select(new Rect(20, 20, 100, 150));
+
+    function save() {
+      console.log(doc.toJSON());
+    }
+  </script>
+</body>
+</html>
